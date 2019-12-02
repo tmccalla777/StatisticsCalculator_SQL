@@ -1,3 +1,5 @@
+import sqlite3
+
 conn = sqlite3.connect('/web/Sqlite-Data/example.db')
 
 c = conn.cursor()
