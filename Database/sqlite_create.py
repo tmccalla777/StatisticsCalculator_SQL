@@ -20,6 +20,10 @@ c.execute('''
             email  String(250), address String(250), town String(250) )
           ''')
 
+c.execute('''
+        CREATE TABLE items
+        (name varchar(250), cost_price INTEGER, selling_price INTEGER, quantity INTEGER)
+''')
 
 
 c.execute('''
