@@ -52,51 +52,6 @@ class Address(Base):
     # creates the relationship between the person and addresses.  backref adds a property to the Person class to retrieve addresses
     person = relationship("Person", backref="addresses")
 
-c1 = Customer(first_name = 'Toby',
-              last_name = 'Miller',
-              username = 'tmiller',
-              email = 'tmiller@example.com',
-              address = '1662 Kinney Street',
-              town = 'Wolfden'
-              )
-c2 = Customer(first_name = 'Scott',
-              last_name = 'Harvey',
-              username = 'scottharvey',
-              email = 'scottharvey@example.com',
-              address = '424 Patterson Street',
-              town = 'Beckinsdale'
-              )
-c3 = Customer(first_name="John",
-              last_name="Lara",
-              username="johnlara",
-              email="johnlara@mail.com",
-              address="3073 Derek Drive",
-              town="Norfolk"
-              )
-c4 = Customer(first_name="Sarah",
-              last_name="Tomlin",
-              username="sarahtomlin",
-              email="sarahtomlin@mail.com",
-              address="3572 Poplar Avenue",
-              town="Norfolk"
-              )
-c5 = Customer(first_name='Toby',
-              last_name='Miller',
-              username='tmiller',
-              email='tmiller@example.com',
-              address='1662 Kinney Street',
-              town='Wolfden'
-              )
-c6 = Customer(first_name='Scott',
-              last_name='Harvey',
-              username='scottharvey',
-              email='scottharvey@example.com',
-              address='424 Patterson Street',
-              town='Beckinsdale'
-              )
-
-session.add_all([c1, c2, c3, c4, c5, c6])
-session.commit()
 
 i1 = Item(name='Chair', cost_price=9.21, selling_price=10.81, quantity=5)
 i2 = Item(name='Pen', cost_price=3.45, selling_price=4.51, quantity=3)
